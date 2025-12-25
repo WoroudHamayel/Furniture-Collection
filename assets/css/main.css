@@ -57,8 +57,6 @@ body{
     display: flex;
     gap: 2px;
     align-items: center;
-    
-    
 }
 
 i{
@@ -90,20 +88,124 @@ i{
     width: 24px;
     height: 24px;
     margin-top: 8px;
-    
-
 
 }
 .menu {
     display: none;
 }
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container{
+  /*padding: 105px 310px;*/
+  padding: 100px 100px;
+
+}
+/*start footer */
+.footer{
+    padding: 50px 0;
+    
+}
+.footer .logo{
+    margin-bottom: 46px;
+}
+.footer input{
+    border: 0;
+    height: 40px;
+    width: 242px;
+    /*padding: 10px 5px;*/
+}
+.button2{
+    border: 0;
+    height: 48px;
+    width: 135px;
+    background-color: #FB2E86;
+    
+    
+}
+.search-form2{
+    border: 2px solid #E7E6EF;
+    display: flex;
+    width: fit-content;
+    margin-bottom: 27px;
+   
+}
+.search-form2 input{
+    border: none;
+    height: 48px;
+    width: 242px;
+    padding: 0 10px;
+}
+.search-form2 .button2{
+    border: none;
+    width: 135px;
+    height: 48px;
+    background-color: #FB2E86;
+    color: #FFFFFF;
+}
+/*.footer .footer-left-side form{
+    display: flex;
+    margin-left: 20px;
+}
+
+.footer .footer-left-side .search-form2{
+    border: 2px solid #E7E6EF;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}*/
+
+/*.footer .search-form{
+    margin: 0;
+    border: 2px solid #E7E6EF;
+    display: flex;
+    justify-content: center;
+}*/
+
+
+.footer .container {
+    background-color: #FFFFFF;
+    
+}
+.footer .row{
+    align-items: flex-start;
+}
+.footer .footer-left-side{
+    width: calc( (100% - 20px) / 2 );
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer .footer-right-side{
+    width: calc( (100% - 20px) / 2 ); 
+}
+.footer .footer-left-side p{
+    color:#8A8FB9;
+
+}
+.footer .footer-right-side .pargrapheColor{
+    color:#8A8FB9;
+    margin-bottom: 23px;
+}
+.footer .footer-right-side .addresses{
+    margin-bottom: 46px;
+}
+/*end footer */
 @media screen and (min-width: 0) and (max-width: 600px) {
-    .header .search-form,
+    .header .search-form, .header .search-form2
     .header .list{
         display: none;
     }
     .menu{
         display: block;
 
+    }
+    .footer .footer-left-side,.footer .footer-right-side{
+        width: 100%;
     }
 }
