@@ -12,13 +12,13 @@ body{
 .header{
     display: flex;
     justify-content: space-around;
-    margin: auto;
-    margin-top: 20px;
-    position: fixed;
     width: 100%;
-
-    
-    
+     margin: 0;
+    padding: 20px 0;
+    /*position: fixed;
+    top: 0;*/
+    position: sticky;
+    top: 0;
 }
 .logo{
       width: 98px;
@@ -104,6 +104,34 @@ i{
   padding: 100px 100px;
 
 }
+.hero{
+    margin-top: 80px;
+    background-image: url('./../image/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+.hero-content{
+    width: 350px;
+    color: #151875;
+    text-align: center;
+}
+.hero button{
+    margin-top: 28px;
+    width: 173px;
+    height: 49px;
+    border: 0px solid ;
+    background-color: #FB2E86;
+    color:#FFFFFF;
+}
+
 /*start footer */
 .footer{
     padding: 50px 0;
@@ -118,7 +146,7 @@ i{
     width: 242px;
     /*padding: 10px 5px;*/
 }
-.button2{
+/*.button2{
     border: 0;
     height: 48px;
     width: 135px;
@@ -145,6 +173,40 @@ i{
     height: 48px;
     background-color: #FB2E86;
     color: #FFFFFF;
+}*/
+/*.footer-left-side .search-form button{
+    border: 0;
+    height: 48px;
+    width: 135px;
+    background-color: #FB2E86;
+    color:#EEEFFB;
+    
+}*/
+.footer-left-side .search-form form{
+    border: 2px solid #E7E6EF;
+    display: flex;
+    width: fit-content; 
+}
+.footer-left-side .search-form{
+    margin-bottom: 27px;
+    margin-left: 0px;
+}
+.footer-left-side .search-form input{
+    border: none;
+    height: 48px;
+    width: 242px;
+    padding: 0 10px;
+    margin: 0;
+    
+}
+.footer-left-side .search-form button{
+    border: none;
+    width: 135px;
+    height: 48px;
+    background-color: #FB2E86;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
 /*.footer .footer-left-side form{
     display: flex;
@@ -197,7 +259,7 @@ i{
 }
 /*end footer */
 @media screen and (min-width: 0) and (max-width: 600px) {
-    .header .search-form, .header .search-form2
+    .header .search-form,
     .header .list{
         display: none;
     }
